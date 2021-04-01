@@ -11,10 +11,11 @@
 	</listeners>
 	<test name="Test" thread-count="5">
 		<classes>
-			           <!-- <class name="com.htc.madison.tests.RegistrationTest"></class>   -->
-			               <class name="com.htc.madison.tests.LoginTest"></class>   
-			       <!--  <class name="com.htc.madison.tests.ProductPurchaseTest">    
-			</class>    -->
+			           <!-- <class name="com.htc.madison.tests.RegistrationTest"></class>  -->  
+			               <class name="com.htc.madison.tests.LoginTest"></class> 
+			    <!--     <class name="com.htc.madison.tests.ProductPurchaseTest">  -->   
+			<!-- </class>  -->
+
 		</classes>
 	</test>
 

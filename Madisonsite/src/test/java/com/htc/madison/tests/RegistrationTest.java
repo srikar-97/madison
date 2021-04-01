@@ -21,7 +21,7 @@ public class RegistrationTest extends BaseTest {
 		registration.Registration_To_Page(mapData.get("firstname"), mapData.get("middlename"), mapData.get("lastname"),
 				mapData.get("emailid"), mapData.get("password"), mapData.get("confirmpassword"));
 		registration.assertcheckBy();
-		Assert.assertEquals(registration.assertcheckBy(), "Thank you for registering with Madison Island.");
+		Assert.assertEquals(registration.assertcheckBy(),mapData.get("assert"));
 		
 
 	}

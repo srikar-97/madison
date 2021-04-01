@@ -1,5 +1,6 @@
 package com.htc.madison.utilites;
 
+import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.NoSuchElementException;
@@ -14,7 +15,7 @@ public class Utility {
 	protected static WebDriver driver;
 
 	public static String getCurrentTime() {
-		String currentDate = new SimpleDateFormat("yyyy-MM-dd-hhmmss").format(new Date());
+		String currentDate = new SimpleDateFormat("yyyy-MM-dd-hh-mm-ss").format(new Date());
 		return currentDate;
 	}
 
@@ -32,6 +33,11 @@ public class Utility {
 		} catch (NoSuchElementException no) {
 			no.printStackTrace();
 		}
+	}
+	
+	public static File creatingFile(String path) {
+		 File name=new File(path);
+		 return name;
 	}
 
 }

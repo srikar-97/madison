@@ -33,7 +33,7 @@ public class RegistrationPage extends BasePage {
 	private WebElement confirmpasswordBy;
 	@FindBy(xpath = "//button[@class='button']")
 	private WebElement registerbuttonBy;
-	@FindBy(xpath = "//span[contains(text(),'Thank you for registering with Madison Island.')]")
+	@FindBy(xpath = "//div[@class='page-title']")
 	private WebElement assertcheckBy;
 
 	public RegistrationPage(WebDriver driver) {

@@ -11,7 +11,7 @@ import com.htc.madison.utilites.Utility;
 public class HomePage extends BasePage{
 	@FindBy(xpath = "//div[@class='block-content']//ul//li[@class='current']//a//strong")
 	private WebElement dashboardBy;
-	@FindBy(xpath = "//strong[contains(text(),\"Hello, Indraganti sai srikar!\")]")
+	@FindBy(xpath = "//div[@class='page-title']\r\n")
 	private WebElement assertcheckBy;
 	@FindBy(xpath = "//input[@id='search']")
 	private WebElement searchproducts;

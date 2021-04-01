@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Mar 22 15:04:10 IST 2021</td>
+<td>Started on:</td><td>Thu Mar 25 20:56:33 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>38 seconds (38122 ms)</td>
+<tr><td>Total time:</td><td>15 seconds (15926 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,61 +75,19 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.htc.madison.tests.LoginTest.Valid_And_Invalid_Login()'><b>Valid_And_Invalid_Login</b><br>Test class: com.htc.madison.tests.LoginTest<br>Parameters: {password=tets123, emailid=test09@gmail.com}</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//strong[contains(text(),&quot;Hello, Indraganti sai srikar!&quot;)]&quot;}
-  (Session info: chrome=89.0.4389.90)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-B4MBJ5N&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59984}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8a00d0aa3ff6939b436edc259e2bc052
-*** Element info: {Using=xpath, value=//strong[contains(text(),&quot;Hello, Indraganti sai srikar!&quot;)]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy11.getText(Unknown Source)
-	at com.htc.madison.pages.HomePage.assert_login(HomePage.java:47)
-	at com.htc.madison.tests.LoginTest.Valid_And_Invalid_Login(LoginTest.java:17)
+<td title='com.htc.madison.tests.LoginTest.Valid_And_Invalid_Login()'><b>Valid_And_Invalid_Login</b><br>Test class: com.htc.madison.tests.LoginTest<br>Parameters: {password=tets123, emailid=test09@gmail.com, assert=MY DASHBOARD}</td>
+<td><div><pre>java.lang.AssertionError: expected [MY DASHBOARD] but found [LOGIN OR CREATE AN ACCOUNT]
+	at com.htc.madison.tests.LoginTest.Valid_And_Invalid_Login(LoginTest.java:19)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1108066952", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1108066952'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//strong[contains(text(),&quot;Hello, Indraganti sai srikar!&quot;)]&quot;}
-  (Session info: chrome=89.0.4389.90)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-B4MBJ5N&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59984}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8a00d0aa3ff6939b436edc259e2bc052
-*** Element info: {Using=xpath, value=//strong[contains(text(),&quot;Hello, Indraganti sai srikar!&quot;)]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy11.getText(Unknown Source)
-	at com.htc.madison.pages.HomePage.assert_login(HomePage.java:47)
-	at com.htc.madison.tests.LoginTest.Valid_And_Invalid_Login(LoginTest.java:17)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace828241083", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace828241083'><pre>java.lang.AssertionError: expected [MY DASHBOARD] but found [LOGIN OR CREATE AN ACCOUNT]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.htc.madison.tests.LoginTest.Valid_And_Invalid_Login(LoginTest.java:19)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -159,7 +117,7 @@ Session ID: 8a00d0aa3ff6939b436edc259e2bc052
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>12</td>
+<td>2</td>
 <td>com.htc.madison.tests.LoginTest@7181ae3f</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -170,9 +128,9 @@ Session ID: 8a00d0aa3ff6939b436edc259e2bc052
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.htc.madison.tests.LoginTest.Valid_And_Invalid_Login()'><b>Valid_And_Invalid_Login</b><br>Test class: com.htc.madison.tests.LoginTest<br>Parameters: {password=srikar97, emailid=srikar021@gamil.com}</td>
+<td title='com.htc.madison.tests.LoginTest.Valid_And_Invalid_Login()'><b>Valid_And_Invalid_Login</b><br>Test class: com.htc.madison.tests.LoginTest<br>Parameters: {password=srikar97, emailid=srikar021@gamil.com, assert=MY DASHBOARD}</td>
 <td></td>
-<td>6</td>
+<td>3</td>
 <td>com.htc.madison.tests.LoginTest@7181ae3f</td></tr>
 </table><p>
 </body>
