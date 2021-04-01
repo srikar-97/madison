@@ -14,8 +14,10 @@ public class LoginTest extends BaseTest {
 	@Parameters("SheetName")
 	public void Valid_And_Invalid_Login(Map<String, String> mapData) throws IOException, InterruptedException {
 		login.Login_To_Page(mapData.get("emailid"), mapData.get("password"));
-		System.out.println(mapData.get("assert"));
-		System.out.println(homepage.assert_login());
+		/*
+		 * System.out.println(mapData.get("assert"));
+		 * System.out.println(homepage.assert_login());
+		 */
 		Assert.assertEquals(homepage.assert_login(), mapData.get("assert"));
 }
 	}
