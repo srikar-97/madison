@@ -44,7 +44,7 @@ public class BaseTest {
 		data = new Properties();
 		FileInputStream fis = null;
 		try {
-			fis = new FileInputStream("C:\\Users\\admin\\git\\madison\\Madisonsite\\src\\test\\resources\\data.properties");
+			fis = new FileInputStream("..\\Madisonsite\\src\\test\\resources\\data.properties");
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
