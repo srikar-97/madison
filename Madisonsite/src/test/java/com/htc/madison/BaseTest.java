@@ -26,7 +26,7 @@ import com.htc.madison.pages.ShoppingCartPage;
 import com.htc.madison.utilites.Screenshot;
 
 public class BaseTest {
-	protected WebDriver driver=null;
+	public static WebDriver driver=null;
 	protected LoginPage login = null;
 	protected HomePage homepage = null;
 	protected ProductsListPage productlist = null;

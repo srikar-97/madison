@@ -15,6 +15,22 @@
           <include name="start"/>
         </methods>
       </class> <!-- com.htc.madison.tests.LoginTest -->
+      <class name="com.htc.madison.tests.RegistrationTest">
+        <methods>
+          <include name="doLogout"/>
+          <include name="browserSetup"/>
+          <include name="Valid_And_Invalid_Registration" invocation-numbers="0 1"/>
+          <include name="start"/>
+        </methods>
+      </class> <!-- com.htc.madison.tests.RegistrationTest -->
+      <class name="com.htc.madison.tests.ProductPurchaseTest">
+        <methods>
+          <include name="Valid_And_Invalid_Login" invocation-numbers="1"/>
+          <include name="doLogout"/>
+          <include name="browserSetup"/>
+          <include name="start"/>
+        </methods>
+      </class> <!-- com.htc.madison.tests.ProductPurchaseTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

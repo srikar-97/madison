@@ -9,9 +9,9 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">16,086</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">65,050</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.htc.madison.tests.LoginTest</td><td><a href="#m0">Valid_And_Invalid_Login</a></td><td rowspan="1">1617604894702</td><td rowspan="1">2135</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.htc.madison.tests.LoginTest</td><td><a href="#m1">Valid_And_Invalid_Login</a></td><td rowspan="1">1617604888878</td><td rowspan="1">4081</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.htc.madison.tests.LoginTest</td><td><a href="#m0">Valid_And_Invalid_Login</a></td><td rowspan="1">1617867137410</td><td rowspan="1">2273</td></tr><tr class="failedodd"><td rowspan="1">com.htc.madison.tests.ProductPurchaseTest</td><td><a href="#m1">Valid_And_Invalid_Login</a></td><td rowspan="1">1617867171507</td><td rowspan="1">12286</td></tr><tr class="failedeven"><td rowspan="2">com.htc.madison.tests.RegistrationTest</td><td><a href="#m2">Valid_And_Invalid_Registration</a></td><td rowspan="2">1617867124588</td><td rowspan="2">4571</td></tr><tr class="failedeven"><td><a href="#m3">Valid_And_Invalid_Registration</a></td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.htc.madison.tests.LoginTest</td><td><a href="#m4">Valid_And_Invalid_Login</a></td><td rowspan="1">1617867133069</td><td rowspan="1">3165</td></tr><tr class="passedodd"><td rowspan="1">com.htc.madison.tests.ProductPurchaseTest</td><td><a href="#m5">Valid_And_Invalid_Login</a></td><td rowspan="1">1617867140207</td><td rowspan="1">28135</td></tr></tbody>
 </table>
 <h2>Test</h2><h3 id="m0">com.htc.madison.tests.LoginTest#Valid_And_Invalid_Login</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=tets123, emailid=test09@gmail.com, assert=MY DASHBOARD
 }</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [MY DASHBOARD
@@ -19,6 +19,43 @@
 	at com.htc.madison.tests.LoginTest.Valid_And_Invalid_Login(LoginTest.java:21)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
 ... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.htc.madison.tests.LoginTest#Valid_And_Invalid_Login</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=srikar97, emailid=srikar01102@gamil.com, assert=MY DASHBOARD}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.htc.madison.tests.ProductPurchaseTest#Valid_And_Invalid_Login</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=tets123, emailid=test09@gmail.com, assert=MY DASHBOARD
+}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;block-content&apos;]//ul//li[@class=&apos;current&apos;]//a//strong&quot;}
+  (Session info: chrome=89.0.4389.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-B4MBJ5N&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53073}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 38851bde0123c5a68f3ff6210148254b
+*** Element info: {Using=xpath, value=//div[@class=&apos;block-content&apos;]//ul//li[@class=&apos;current&apos;]//a//strong}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
+	at com.htc.madison.utilites.Utility.waitToBeVisibile(Utility.java:30)
+	at com.htc.madison.pages.HomePage.Home_Page(HomePage.java:28)
+	at com.htc.madison.tests.ProductPurchaseTest.Valid_And_Invalid_Login(ProductPurchaseTest.java:19)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.htc.madison.tests.RegistrationTest#Valid_And_Invalid_Registration</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{firstname=indraganti, password=srikar97, assert=MY DASHBOARD, middlename=raghavendra, emailid=srikar09@gmail.com, confirmpassword=srikar97, lastname=srikar}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [MY DASHBOARD] but found [CREATE AN ACCOUNT]
+	at com.htc.madison.tests.RegistrationTest.Valid_And_Invalid_Registration(RegistrationTest.java:24)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.htc.madison.tests.RegistrationTest#Valid_And_Invalid_Registration</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{firstname=Indraganti, password=srikar97, assert=MY DASHBOARD, middlename=sai, emailid=srikar171998@gamil.com, confirmpassword=srikar97, lastname=srikar}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [MY DASHBOARD] but found [CREATE AN ACCOUNT]
+	at com.htc.madison.tests.RegistrationTest.Valid_And_Invalid_Registration(RegistrationTest.java:24)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.htc.madison.tests.LoginTest#Valid_And_Invalid_Login</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=srikar97, emailid=srikar171997@gamil.com, assert=MY DASHBOARD}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.htc.madison.tests.ProductPurchaseTest#Valid_And_Invalid_Login</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=srikar97, emailid=srikar171997@gamil.com, assert=MY DASHBOARD}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

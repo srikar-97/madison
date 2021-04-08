@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+<testng-results skipped="0" failed="4" ignored="2" total="8" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="16086" started-at="2021-04-05T12:11:21 IST" finished-at="2021-04-05T12:11:37 IST">
+  <suite name="Suite" duration-ms="65050" started-at="2021-04-08T13:01:59 IST" finished-at="2021-04-08T13:03:04 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="16086" started-at="2021-04-05T12:11:21 IST" finished-at="2021-04-05T12:11:37 IST">
-      <class name="com.htc.madison.tests.LoginTest">
-        <test-method status="PASS" signature="start(java.lang.String)[pri:0, instance:com.htc.madison.tests.LoginTest@7181ae3f]" name="start" is-config="true" duration-ms="15070" started-at="2021-04-05T12:11:06 IST" finished-at="2021-04-05T12:11:21 IST">
+    <test name="Test" duration-ms="65050" started-at="2021-04-08T13:01:59 IST" finished-at="2021-04-08T13:03:04 IST">
+      <class name="com.htc.madison.tests.RegistrationTest">
+        <test-method status="PASS" signature="start(java.lang.String)[pri:0, instance:com.htc.madison.tests.RegistrationTest@6e2c9341]" name="start" is-config="true" duration-ms="9782" started-at="2021-04-08T13:01:49 IST" finished-at="2021-04-08T13:01:59 IST">
           <params>
             <param index="0">
               <value>
@@ -18,33 +18,171 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method status="PASS" signature="browserSetup()[pri:0, instance:com.htc.madison.tests.LoginTest@7181ae3f]" name="browserSetup" is-config="true" duration-ms="539" started-at="2021-04-05T12:11:21 IST" finished-at="2021-04-05T12:11:22 IST">
+        <test-method status="PASS" signature="browserSetup()[pri:0, instance:com.htc.madison.tests.RegistrationTest@6e2c9341]" name="browserSetup" is-config="true" duration-ms="141" started-at="2021-04-08T13:01:59 IST" finished-at="2021-04-08T13:01:59 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method status="PASS" signature="Valid_And_Invalid_Login(java.util.Map)[pri:0, instance:com.htc.madison.tests.LoginTest@7181ae3f]" name="Valid_And_Invalid_Login" duration-ms="4081" started-at="2021-04-05T12:11:28 IST" data-provider="Madison" finished-at="2021-04-05T12:11:32 IST">
+        <test-method status="FAIL" signature="Valid_And_Invalid_Registration(java.util.Map)[pri:0, instance:com.htc.madison.tests.RegistrationTest@6e2c9341]" name="Valid_And_Invalid_Registration" duration-ms="4571" started-at="2021-04-08T13:02:04 IST" data-provider="Madison" finished-at="2021-04-08T13:02:09 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=srikar97, emailid=srikar01102@gamil.com, assert=MY DASHBOARD}]]>
+                <![CDATA[{firstname=indraganti, password=srikar97, assert=MY DASHBOARD, middlename=raghavendra, emailid=srikar09@gmail.com, confirmpassword=srikar97, lastname=srikar}]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [MY DASHBOARD] but found [CREATE AN ACCOUNT]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [MY DASHBOARD] but found [CREATE AN ACCOUNT]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at com.htc.madison.tests.RegistrationTest.Valid_And_Invalid_Registration(RegistrationTest.java:24)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Valid_And_Invalid_Login -->
-        <test-method status="PASS" signature="doLogout(org.testng.ITestResult)[pri:0, instance:com.htc.madison.tests.LoginTest@7181ae3f]" name="doLogout" is-config="true" duration-ms="915" started-at="2021-04-05T12:11:33 IST" finished-at="2021-04-05T12:11:34 IST">
+        </test-method> <!-- Valid_And_Invalid_Registration -->
+        <test-method status="PASS" signature="doLogout(org.testng.ITestResult)[pri:0, instance:com.htc.madison.tests.RegistrationTest@6e2c9341]" name="doLogout" is-config="true" duration-ms="1" started-at="2021-04-08T13:02:09 IST" finished-at="2021-04-08T13:02:09 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Valid_And_Invalid_Login status=SUCCESS method=LoginTest.Valid_And_Invalid_Login(java.util.Map)[pri:0, instance:com.htc.madison.tests.LoginTest@7181ae3f] output={null}]]]>
+                <![CDATA[[TestResult name=Valid_And_Invalid_Registration status=FAILURE method=RegistrationTest.Valid_And_Invalid_Registration(java.util.Map)[pri:0, instance:com.htc.madison.tests.RegistrationTest@6e2c9341] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doLogout -->
-        <test-method status="FAIL" signature="Valid_And_Invalid_Login(java.util.Map)[pri:0, instance:com.htc.madison.tests.LoginTest@7181ae3f]" name="Valid_And_Invalid_Login" duration-ms="2135" started-at="2021-04-05T12:11:34 IST" data-provider="Madison" finished-at="2021-04-05T12:11:36 IST">
+        <test-method status="FAIL" signature="Valid_And_Invalid_Registration(java.util.Map)[pri:0, instance:com.htc.madison.tests.RegistrationTest@6e2c9341]" name="Valid_And_Invalid_Registration" duration-ms="2598" started-at="2021-04-08T13:02:09 IST" data-provider="Madison" finished-at="2021-04-08T13:02:12 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{firstname=Indraganti, password=srikar97, assert=MY DASHBOARD, middlename=sai, emailid=srikar171998@gamil.com, confirmpassword=srikar97, lastname=srikar}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [MY DASHBOARD] but found [CREATE AN ACCOUNT]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [MY DASHBOARD] but found [CREATE AN ACCOUNT]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at com.htc.madison.tests.RegistrationTest.Valid_And_Invalid_Registration(RegistrationTest.java:24)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Valid_And_Invalid_Registration -->
+        <test-method status="PASS" signature="doLogout(org.testng.ITestResult)[pri:0, instance:com.htc.madison.tests.RegistrationTest@6e2c9341]" name="doLogout" is-config="true" duration-ms="1" started-at="2021-04-08T13:02:12 IST" finished-at="2021-04-08T13:02:12 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Valid_And_Invalid_Registration status=FAILURE method=RegistrationTest.Valid_And_Invalid_Registration(java.util.Map)[pri:0, instance:com.htc.madison.tests.RegistrationTest@6e2c9341] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogout -->
+      </class> <!-- com.htc.madison.tests.RegistrationTest -->
+      <class name="com.htc.madison.tests.LoginTest">
+        <test-method status="PASS" signature="browserSetup()[pri:0, instance:com.htc.madison.tests.LoginTest@32464a14]" name="browserSetup" is-config="true" duration-ms="6" started-at="2021-04-08T13:02:12 IST" finished-at="2021-04-08T13:02:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+        <test-method status="PASS" signature="Valid_And_Invalid_Login(java.util.Map)[pri:0, instance:com.htc.madison.tests.LoginTest@32464a14]" name="Valid_And_Invalid_Login" duration-ms="3165" started-at="2021-04-08T13:02:13 IST" data-provider="Madison" finished-at="2021-04-08T13:02:16 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=srikar97, emailid=srikar171997@gamil.com, assert=MY DASHBOARD}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Valid_And_Invalid_Login -->
+        <test-method status="PASS" signature="doLogout(org.testng.ITestResult)[pri:0, instance:com.htc.madison.tests.LoginTest@32464a14]" name="doLogout" is-config="true" duration-ms="798" started-at="2021-04-08T13:02:16 IST" finished-at="2021-04-08T13:02:17 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Valid_And_Invalid_Login status=SUCCESS method=LoginTest.Valid_And_Invalid_Login(java.util.Map)[pri:0, instance:com.htc.madison.tests.LoginTest@32464a14] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogout -->
+        <test-method status="FAIL" signature="Valid_And_Invalid_Login(java.util.Map)[pri:0, instance:com.htc.madison.tests.LoginTest@32464a14]" name="Valid_And_Invalid_Login" duration-ms="2273" started-at="2021-04-08T13:02:17 IST" data-provider="Madison" finished-at="2021-04-08T13:02:19 IST">
           <params>
             <param index="0">
               <value>
@@ -102,11 +240,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Valid_And_Invalid_Login -->
-        <test-method status="PASS" signature="doLogout(org.testng.ITestResult)[pri:0, instance:com.htc.madison.tests.LoginTest@7181ae3f]" name="doLogout" is-config="true" duration-ms="1" started-at="2021-04-05T12:11:37 IST" finished-at="2021-04-05T12:11:37 IST">
+        <test-method status="PASS" signature="doLogout(org.testng.ITestResult)[pri:0, instance:com.htc.madison.tests.LoginTest@32464a14]" name="doLogout" is-config="true" duration-ms="1" started-at="2021-04-08T13:02:20 IST" finished-at="2021-04-08T13:02:20 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Valid_And_Invalid_Login status=FAILURE method=LoginTest.Valid_And_Invalid_Login(java.util.Map)[pri:0, instance:com.htc.madison.tests.LoginTest@7181ae3f] output={null}]]]>
+                <![CDATA[[TestResult name=Valid_And_Invalid_Login status=FAILURE method=LoginTest.Valid_And_Invalid_Login(java.util.Map)[pri:0, instance:com.htc.madison.tests.LoginTest@32464a14] output={null}]]]>
               </value>
             </param>
           </params>
@@ -114,6 +252,130 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- doLogout -->
       </class> <!-- com.htc.madison.tests.LoginTest -->
+      <class name="com.htc.madison.tests.ProductPurchaseTest">
+        <test-method status="PASS" signature="browserSetup()[pri:0, instance:com.htc.madison.tests.ProductPurchaseTest@4e4aea35]" name="browserSetup" is-config="true" duration-ms="5" started-at="2021-04-08T13:02:20 IST" finished-at="2021-04-08T13:02:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+        <test-method status="PASS" signature="Valid_And_Invalid_Login(java.util.Map)[pri:0, instance:com.htc.madison.tests.ProductPurchaseTest@4e4aea35]" name="Valid_And_Invalid_Login" duration-ms="28135" started-at="2021-04-08T13:02:20 IST" data-provider="Madison" finished-at="2021-04-08T13:02:48 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=srikar97, emailid=srikar171997@gamil.com, assert=MY DASHBOARD}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Valid_And_Invalid_Login -->
+        <test-method status="PASS" signature="doLogout(org.testng.ITestResult)[pri:0, instance:com.htc.madison.tests.ProductPurchaseTest@4e4aea35]" name="doLogout" is-config="true" duration-ms="2729" started-at="2021-04-08T13:02:48 IST" finished-at="2021-04-08T13:02:51 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Valid_And_Invalid_Login status=SUCCESS method=ProductPurchaseTest.Valid_And_Invalid_Login(java.util.Map)[pri:0, instance:com.htc.madison.tests.ProductPurchaseTest@4e4aea35] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogout -->
+        <test-method status="FAIL" signature="Valid_And_Invalid_Login(java.util.Map)[pri:0, instance:com.htc.madison.tests.ProductPurchaseTest@4e4aea35]" name="Valid_And_Invalid_Login" duration-ms="12286" started-at="2021-04-08T13:02:51 IST" data-provider="Madison" finished-at="2021-04-08T13:03:03 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=tets123, emailid=test09@gmail.com, assert=MY DASHBOARD
+}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='block-content']//ul//li[@class='current']//a//strong"}
+  (Session info: chrome=89.0.4389.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-B4MBJ5N', ip: '192.168.0.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53073}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 38851bde0123c5a68f3ff6210148254b
+*** Element info: {Using=xpath, value=//div[@class='block-content']//ul//li[@class='current']//a//strong}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='block-content']//ul//li[@class='current']//a//strong"}
+  (Session info: chrome=89.0.4389.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-B4MBJ5N', ip: '192.168.0.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53073}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 38851bde0123c5a68f3ff6210148254b
+*** Element info: {Using=xpath, value=//div[@class='block-content']//ul//li[@class='current']//a//strong}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
+at com.htc.madison.utilites.Utility.waitToBeVisibile(Utility.java:30)
+at com.htc.madison.pages.HomePage.Home_Page(HomePage.java:28)
+at com.htc.madison.tests.ProductPurchaseTest.Valid_And_Invalid_Login(ProductPurchaseTest.java:19)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Valid_And_Invalid_Login -->
+        <test-method status="PASS" signature="doLogout(org.testng.ITestResult)[pri:0, instance:com.htc.madison.tests.ProductPurchaseTest@4e4aea35]" name="doLogout" is-config="true" duration-ms="0" started-at="2021-04-08T13:03:04 IST" finished-at="2021-04-08T13:03:04 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Valid_And_Invalid_Login status=FAILURE method=ProductPurchaseTest.Valid_And_Invalid_Login(java.util.Map)[pri:0, instance:com.htc.madison.tests.ProductPurchaseTest@4e4aea35] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogout -->
+      </class> <!-- com.htc.madison.tests.ProductPurchaseTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
